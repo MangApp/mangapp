@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.base",
-  "include": ["**/*.ts", "**/*.tsx", "../config/src/tamagui.config.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "../config/src/tamagui.config.ts", "src/utils/functions/chunkArray.tsx"],
   "compilerOptions": {
     "esModuleInterop": true,
     "composite": true,
