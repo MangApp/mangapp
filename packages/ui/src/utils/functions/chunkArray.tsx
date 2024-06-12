@@ -1,4 +1,4 @@
-import React from 'react'; // Only necessary if you are using JSX in the same file.
+import React from 'react' // Only necessary if you are using JSX in the same file.
 
 /**
  * Breaks an array into chunks of a specified size.
@@ -7,11 +7,11 @@ import React from 'react'; // Only necessary if you are using JSX in the same fi
  * @returns An array containing the chunked arrays.
  */
 function chunkArray<T>(array: T[], size: number): T[][] {
-  const chunked: T[][] = [];
+  const chunked: T[][] = []
   for (let i = 0; i < array.length; i += size) {
-    chunked.push(array.slice(i, i + size));
+    chunked.push(array.slice(i, i + size))
   }
-  return chunked;
+  return chunked
 }
 
-export default chunkArray;
+export default chunkArray

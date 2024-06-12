@@ -2,15 +2,15 @@ import type { CardProps } from '@my/ui/src'
 import { Button, Card, H2, Image, Paragraph, XStack } from '@my/ui/src'
 
 interface AppCardProps extends CardProps {
-  title?: string;
-  paragraphText?: string;
-  imageUrl?: string;
-  imageWidth?: number;
-  imageHeight?: number;
+  title?: string
+  paragraphText?: string
+  imageUrl?: string
+  imageWidth?: number
+  imageHeight?: number
 }
 
 export function MangaCard(props: AppCardProps) {
-  const { title, paragraphText, imageUrl, imageWidth, imageHeight, ...cardProps } = props;
+  const { title, paragraphText, imageUrl, imageWidth, imageHeight, ...cardProps } = props
 
   return (
     <Card {...cardProps}>
@@ -34,5 +34,5 @@ export function MangaCard(props: AppCardProps) {
         />
       </Card.Background>
     </Card>
-  );
+  )
 }
