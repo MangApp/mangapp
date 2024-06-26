@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Stack, XStack, YStack, ZStack, Text } from '@my/ui'
 import { SolitoImage as Image } from 'solito/image'
+import { MangaPageSelect } from './components/MangaPageSelect'
 
 export const MangaReadScreen: React.FC = () => {
   const [overlayVisible, setOverlayVisible] = useState(true)
@@ -27,8 +28,7 @@ export const MangaReadScreen: React.FC = () => {
           left={0}
           backgroundColor={'rgba(69,85,117,0.7)'}
         >
-          <XStack flex={1} alignItems="flex-start" justifyContent="flex-start">
-            {/* <Text>aslfkjasoikgjh</Text> */}
+          <XStack flex={1} alignItems="flex-start" justifyContent="flex-start" marginTop={10}>
             <Stack minWidth={'10%'} minHeight={'10%'}>
               <Image
                 src={'https://i.ibb.co/q0WBpm4/logo.png'}
@@ -37,6 +37,10 @@ export const MangaReadScreen: React.FC = () => {
                 fill
               />
             </Stack>
+            <YStack>
+              <Text>Manga Name</Text>
+              <MangaPageSelect />
+            </YStack>
           </XStack>
         </YStack>
       )}
